@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ian Thorng Dy | IT Student & Computer Teacher Applicant</title>
+<meta name="description" content="Professional portfolio of Ian Thorng Dy, a third-year Information Technology student majoring in Software Development and Computer Teacher applicant.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Ian Thorng Dy | IT Student & Computer Teacher Applicant">
+<meta property="og:description" content="Professional portfolio of Ian Thorng Dy, a third-year Information Technology student majoring in Software Development and Computer Teacher applicant.">
+<meta property="og:type" content="website">
+
+<!-- Favicon -->
+<link rel="icon" href="data:,">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5.3 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Scroll progress bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- Custom cursor glow (desktop only) -->
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- Skip link for accessibility -->
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header>
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand logo" href="#home">IAN <span>THORNG DY</span></a>
+    <button class="navbar-toggler custom-toggler" type="button" id="navToggle" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-bar"></span>
+      <span class="toggler-bar"></span>
+      <span class="toggler-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link active" href="#home" data-section="home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about" data-section="about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education" data-section="education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills" data-section="skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience" data-section="experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects" data-section="projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" data-section="contact">Contact</a></li>
+        <li class="nav-item ms-lg-2 mt-3 mt-lg-0">
+          <a href="assets/Ian-Thorng-Dy-CV.pdf" download class="btn-neon btn-neon-purple btn-sm-nav">
+            <span>Download CV</span>
+            <i class="fa-solid fa-download"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero-section">
+  <div class="bg-scene" aria-hidden="true">
+    <div class="grid-overlay"></div>
+    <div class="orb orb-purple"></div>
+    <div class="orb orb-cyan"></div>
+    <div class="orb orb-blue"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+
+  <div class="container position-relative">
+    <div class="row align-items-center min-vh-hero">
+      <div class="col-lg-6 order-2 order-lg-1" data-reveal="left">
+        <div class="badge-pill mb-4">
+          <span class="badge-dot"></span>
+          Available for Computer Teacher opportunities
+        </div>
+
+        <h1 class="hero-title">
+          <span class="line" data-hero-line>Ian Thorng Dy</span>
+        </h1>
+
+        <p class="hero-subtitle">IT Student &middot; Software Development &middot; Computer Teacher Applicant</p>
+
+        <p class="hero-desc">
+          I am a third-year Information Technology student at National Meanchey University with a passion for technology and teaching. I enjoy helping others develop practical computer skills for academic and professional success.
+        </p>
+
+        <div class="hero-cta d-flex flex-wrap gap-3">
+          <a href="#skills" class="btn-neon btn-neon-purple">
+            <span>View My Skills</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="assets/Ian-Thorng-Dy-CV.pdf" download class="btn-neon btn-neon-blue">
+            <span>Download CV</span>
+            <i class="fa-solid fa-download"></i>
+          </a>
+          <a href="#contact" class="btn-neon btn-neon-outline">
+            <span>Contact Me</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </a>
+        </div>
+
+        <div class="hero-meta d-flex flex-wrap gap-4 mt-5">
+          <div>
+            <span class="meta-num" data-counter="3">0</span><span class="meta-suffix">rd</span>
+            <div class="meta-label">Year IT Student</div>
+          </div>
+          <div>
+            <span class="meta-num" data-counter="2">0</span>
+            <div class="meta-label">Languages Spoken</div>
+          </div>
+          <div>
+            <span class="meta-num" data-counter="3">0</span>
+            <div class="meta-label">Programming Languages</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 order-1 order-lg-2 mb-5 mb-lg-0" data-reveal="right">
+        <div class="profile-hud-wrap">
+          <div class="hud-ring hud-ring-1" aria-hidden="true"></div>
+          <div class="hud-ring hud-ring-2" aria-hidden="true"></div>
+          <div class="hud-corner hud-corner-tl" aria-hidden="true"></div>
+          <div class="hud-corner hud-corner-tr" aria-hidden="true"></div>
+          <div class="hud-corner hud-corner-bl" aria-hidden="true"></div>
+          <div class="hud-corner hud-corner-br" aria-hidden="true"></div>
+
+          <div class="hud-tag hud-tag-1">IT STUDENT</div>
+          <div class="hud-tag hud-tag-2">SOFTWARE DEVELOPMENT</div>
+
+          <div class="profile-frame" id="profileFrame">
+            <img src="assets/images/profile.jpg" alt="Portrait of Ian Thorng Dy" id="profileImg" class="profile-img">
+            <div class="profile-fallback" id="profileFallback">
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+
+          <button class="change-photo-btn" id="changePhotoBtn" type="button">
+            <i class="fa-solid fa-camera"></i>
+            <span>Change Photo</span>
+          </button>
+          <input type="file" id="photoInput" accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp" hidden>
+          <button class="reset-photo-btn d-none" id="resetPhotoBtn" type="button">
+            <i class="fa-solid fa-rotate-left"></i> Reset Photo
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator" aria-hidden="true">
+    <span></span>
+    <p>Scroll</p>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section-py">
+  <div class="container">
+    <div class="section-head" data-reveal="up">
+      <p class="section-kicker">Who I Am</p>
+      <h2 class="section-title">About Me</h2>
+    </div>
+
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7" data-reveal="up">
+        <div class="glass-card about-card">
+          <p class="about-text">
+            I am a 3rd-year IT student at National Meanchey University with a passion for technology and teaching. I am skilled in Microsoft Word, PowerPoint, and Excel, and I enjoy helping others develop practical computer skills for academic and professional success.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="row g-3">
+          <div class="col-6" data-reveal="up" data-delay="0">
+            <div class="stat-card">
+              <div class="stat-value">3rd Year</div>
+              <div class="stat-label">IT Student</div>
+            </div>
+          </div>
+          <div class="col-6" data-reveal="up" data-delay="1">
+            <div class="stat-card">
+              <div class="stat-value">Software Dev.</div>
+              <div class="stat-label">Major</div>
+            </div>
+          </div>
+          <div class="col-6" data-reveal="up" data-delay="2">
+            <div class="stat-card">
+              <div class="stat-value">Computer Teacher</div>
+              <div class="stat-label">Career Goal</div>
+            </div>
+          </div>
+          <div class="col-6" data-reveal="up" data-delay="3">
+            <div class="stat-card">
+              <div class="stat-value">Tech + Teaching</div>
+              <div class="stat-label">Passion</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education" class="section-py section-alt">
+  <div class="container">
+    <div class="section-head" data-reveal="up">
+      <p class="section-kicker">Academic Background</p>
+      <h2 class="section-title">Education</h2>
+    </div>
+
+    <div class="timeline" id="timeline">
+
+      <div class="timeline-item" data-reveal="up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <span class="timeline-date">2024 &ndash; Now</span>
+          <h3>National Meanchey University</h3>
+          <p>Currently studying 3rd year, majoring in Software Development.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-reveal="up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <span class="timeline-date">2025 &ndash; 2026</span>
+          <h3>Community School Of Excellence</h3>
+          <p>Part-time study of English skills.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-reveal="up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <span class="timeline-date">2018 &ndash; 2024</span>
+          <h3>Svay Chek High School</h3>
+          <p>Successfully completed BAC II at Svay Chek High School on 08 October 2024.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-reveal="up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content glass-card">
+          <span class="timeline-date">2013 &ndash; 2018</span>
+          <h3>Sleng Primary School</h3>
+          <p>Foundational primary education.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ TECHNICAL SKILLS ============ -->
+<section id="skills" class="section-py">
+  <div class="container">
+    <div class="section-head" data-reveal="up">
+      <p class="section-kicker">What I Work With</p>
+      <h2 class="section-title">Technical Proficiency</h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3" data-reveal="up" data-delay="0">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-file-word"></i></div>
+          <h3>Microsoft Office</h3>
+          <ul class="skill-list">
+            <li>Word</li>
+            <li>PowerPoint</li>
+            <li>Excel <span class="tag-mini">Basic level</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-reveal="up" data-delay="1">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-brands fa-adobe"></i></div>
+          <h3>Graphic Design</h3>
+          <ul class="skill-list">
+            <li>Adobe Photoshop</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-reveal="up" data-delay="2">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-display"></i></div>
+          <h3>Presentation Skills</h3>
+          <ul class="skill-list">
+            <li>Engaging slide creation</li>
+            <li>Animations</li>
+            <li>PowerPoint transitions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-reveal="up" data-delay="3">
+        <div class="skill-card">
+          <div class="skill-icon"><i class="fa-solid fa-computer"></i></div>
+          <h3>Computer Skills</h3>
+          <ul class="skill-list">
+            <li>File management</li>
+            <li>Operating systems (Windows)</li>
+            <li>Software installation &amp; setup</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-1 justify-content-center">
+      <div class="col-12" data-reveal="up">
+        <p class="prog-lang-heading">Programming Languages <span class="tag-mini">Self-assessed, learning</span></p>
+      </div>
+      <div class="col-6 col-md-3" data-reveal="up" data-delay="0">
+        <div class="badge-tech"><i class="fa-brands fa-python"></i><span>Python</span></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal="up" data-delay="1">
+        <div class="badge-tech"><i class="fa-brands fa-java"></i><span>Java</span></div>
+      </div>
+      <div class="col-6 col-md-3" data-reveal="up" data-delay="2">
+        <div class="badge-tech"><i class="fa-brands fa-php"></i><span>PHP</span></div>
+      </div>
+    </div>
+
+    <!-- Personal Skills -->
+    <div class="section-head mt-5 pt-4" data-reveal="up">
+      <p class="section-kicker">Beyond the Technical</p>
+      <h2 class="section-title">Personal Skills</h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3" data-reveal="up" data-delay="0">
+        <div class="personal-card">
+          <i class="fa-solid fa-people-group"></i>
+          <h4>Teamwork</h4>
+          <p>Good relationship-building and ability to work as a team.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-reveal="up" data-delay="1">
+        <div class="personal-card">
+          <i class="fa-solid fa-clock"></i>
+          <h4>Dedication</h4>
+          <p>Willing to work long hours when necessary and gain new experience.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-reveal="up" data-delay="2">
+        <div class="personal-card">
+          <i class="fa-solid fa-chalkboard-user"></i>
+          <h4>Teaching &amp; Training</h4>
+          <p>Ability to explain concepts clearly to beginners.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-reveal="up" data-delay="3">
+        <div class="personal-card">
+          <i class="fa-solid fa-list-check"></i>
+          <h4>Time Management</h4>
+          <p>Planning lessons effectively and managing class time.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Languages -->
+    <div class="section-head mt-5 pt-4" data-reveal="up">
+      <p class="section-kicker">Communication</p>
+      <h2 class="section-title">Languages</h2>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-5" data-reveal="up" data-delay="0">
+        <div class="lang-card">
+          <div class="lang-top">
+            <h4>Khmer</h4>
+            <span class="lang-level">Native</span>
+          </div>
+          <div class="lang-bar"><div class="lang-fill" style="width:100%"></div></div>
+        </div>
+      </div>
+      <div class="col-md-5" data-reveal="up" data-delay="1">
+        <div class="lang-card">
+          <div class="lang-top">
+            <h4>English</h4>
+            <span class="lang-level">Medium</span>
+          </div>
+          <div class="lang-bar"><div class="lang-fill" style="width:55%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" class="section-py section-alt">
+  <div class="container">
+    <div class="section-head" data-reveal="up">
+      <p class="section-kicker">Hands-On Ability</p>
+      <h2 class="section-title">Practical Experience</h2>
+      <p class="section-note">Not formal employment &mdash; practical capability developed through study and self-practice.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" data-reveal="up" data-delay="0">
+        <div class="exp-card">
+          <div class="exp-icons">
+            <i class="fa-solid fa-file-word"></i>
+            <i class="fa-solid fa-file-powerpoint"></i>
+            <i class="fa-solid fa-file-excel"></i>
+          </div>
+          <h3>Microsoft Office Suite</h3>
+          <p>Practical use of Word, PowerPoint, and Excel for documents, presentations, and basic spreadsheets.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-reveal="up" data-delay="1">
+        <div class="exp-card">
+          <div class="exp-icons">
+            <i class="fa-brands fa-adobe"></i>
+          </div>
+          <h3>Adobe Photoshop</h3>
+          <p>Applied working knowledge of Photoshop for basic image editing and design tasks.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-reveal="up" data-delay="2">
+        <div class="exp-card">
+          <div class="exp-icons">
+            <i class="fa-brands fa-windows"></i>
+            <i class="fa-solid fa-folder-open"></i>
+          </div>
+          <h3>Computer &amp; Software</h3>
+          <p>File management, Windows setup, and software installation on personal and lab computers.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Teaching Philosophy -->
+    <div class="section-head mt-5 pt-4" data-reveal="up">
+      <p class="section-kicker">How I Teach</p>
+      <h2 class="section-title">My Teaching Approach</h2>
+    </div>
+
+    <div class="teaching-flow" data-reveal="up">
+      <div class="flow-step">
+        <div class="flow-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <h4>Understand</h4>
+        <p>Explain concepts clearly so beginners grasp the fundamentals.</p>
+      </div>
+      <div class="flow-arrow"><i class="fa-solid fa-arrow-down d-lg-none"></i><i class="fa-solid fa-arrow-right d-none d-lg-block"></i></div>
+      <div class="flow-step">
+        <div class="flow-icon"><i class="fa-solid fa-keyboard"></i></div>
+        <h4>Practice</h4>
+        <p>Guide practical, hands-on computer skills with patient communication.</p>
+      </div>
+      <div class="flow-arrow"><i class="fa-solid fa-arrow-down d-lg-none"></i><i class="fa-solid fa-arrow-right d-none d-lg-block"></i></div>
+      <div class="flow-step">
+        <div class="flow-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+        <h4>Create</h4>
+        <p>Build engaging presentations and effective classroom time management.</p>
+      </div>
+      <div class="flow-arrow"><i class="fa-solid fa-arrow-down d-lg-none"></i><i class="fa-solid fa-arrow-right d-none d-lg-block"></i></div>
+      <div class="flow-step">
+        <div class="flow-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h4>Apply</h4>
+        <p>Support students' academic development and future professional success.</p>
+      </div>
+    </div>
+
+    <p class="teaching-caption" data-reveal="up">Learn Today &bull; Teach Tomorrow &bull; Make a Difference</p>
+
+    <!-- Cover letter summary -->
+    <div class="section-head mt-5 pt-4" data-reveal="up">
+      <p class="section-kicker">My Motivation</p>
+      <h2 class="section-title">Why I Want to Teach</h2>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-9" data-reveal="up">
+        <div class="glass-card letter-card">
+          <p>I am currently a third-year Information Technology student majoring in Software Development at National Meanchey University. I am passionate about technology and teaching, and I am interested in helping students develop practical computer skills that can support their academic and future professional success.</p>
+          <p>I have developed practical skills in Microsoft Office (Word, PowerPoint, Excel), Adobe Photoshop, Windows, software installation, and programming languages including Python, Java, and PHP.</p>
+          <p>A good computer teacher should not only understand technology but also be able to communicate concepts clearly, work patiently with students, manage classroom time effectively, and create an engaging learning environment.</p>
+          <a href="assets/Ian-Thorng-Dy-Cover-Letter.pdf" download class="btn-neon btn-neon-outline mt-3">
+            <span>View Cover Letter</span>
+            <i class="fa-solid fa-file-lines"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="section-py">
+  <div class="container">
+    <div class="section-head" data-reveal="up">
+      <p class="section-kicker">Editable Placeholders</p>
+      <h2 class="section-title">Projects</h2>
+      <p class="section-note">These are placeholder cards &mdash; replace the image, title, description, and links with your own projects.</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-lg-4" data-reveal="up" data-delay="0">
+        <div class="project-card">
+          <span class="project-placeholder-tag">Editable Placeholder</span>
+          <div class="project-thumb">
+            <img src="assets/images/project-1.jpg" alt="Software Development Project placeholder image" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-index">Project 01</span>
+            <h3>Software Development Project</h3>
+            <p>Add project description here.</p>
+            <div class="project-tech">
+              <span class="tag-mini">Tech Stack</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-mini"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="link-mini"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4" data-reveal="up" data-delay="1">
+        <div class="project-card">
+          <span class="project-placeholder-tag">Editable Placeholder</span>
+          <div class="project-thumb">
+            <img src="assets/images/project-2.jpg" alt="Computer Application Project placeholder image" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-index">Project 02</span>
+            <h3>Computer Application Project</h3>
+            <p>Add project description here.</p>
+            <div class="project-tech">
+              <span class="tag-mini">Tech Stack</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-mini"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="link-mini"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4" data-reveal="up" data-delay="2">
+        <div class="project-card">
+          <span class="project-placeholder-tag">Editable Placeholder</span>
+          <div class="project-thumb">
+            <img src="assets/images/project-3.jpg" alt="Creative and Design Project placeholder image" loading="lazy">
+          </div>
+          <div class="project-body">
+            <span class="project-index">Project 03</span>
+            <h3>Creative / Design Project</h3>
+            <p>Add project description here.</p>
+            <div class="project-tech">
+              <span class="tag-mini">Tech Stack</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="link-mini"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a href="#" class="link-mini"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section-py section-alt">
+  <div class="container">
+    <div class="section-head" data-reveal="up">
+      <p class="section-kicker">Get In Touch</p>
+      <h2 class="section-title">Contact</h2>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <div class="col-md-4" data-reveal="up" data-delay="0">
+        <a href="mailto:thorngdy632@gmail.com" class="contact-card">
+          <i class="fa-solid fa-envelope"></i>
+          <h4>Email</h4>
+          <p>thorngdy632@gmail.com</p>
+        </a>
+      </div>
+      <div class="col-md-4" data-reveal="up" data-delay="1">
+        <a href="tel:+885067267968" class="contact-card">
+          <i class="fa-solid fa-phone"></i>
+          <h4>Phone</h4>
+          <p>+885 067 267 968</p>
+        </a>
+      </div>
+      <div class="col-md-4" data-reveal="up" data-delay="2">
+        <div class="contact-card contact-card-static">
+          <i class="fa-solid fa-location-dot"></i>
+          <h4>Location</h4>
+          <p>Serei Saophoan City, Banteay Meanchey Province, Cambodia</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8" data-reveal="up">
+        <form class="contact-form glass-card" id="contactForm" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="cName" class="form-label-custom">Name</label>
+              <input type="text" class="form-control-custom" id="cName" name="name" required>
+              <div class="invalid-feedback-custom">Please enter your name.</div>
+            </div>
+            <div class="col-md-6">
+              <label for="cEmail" class="form-label-custom">Email</label>
+              <input type="email" class="form-control-custom" id="cEmail" name="email" required>
+              <div class="invalid-feedback-custom">Please enter a valid email.</div>
+            </div>
+            <div class="col-12">
+              <label for="cSubject" class="form-label-custom">Subject</label>
+              <input type="text" class="form-control-custom" id="cSubject" name="subject" required>
+              <div class="invalid-feedback-custom">Please enter a subject.</div>
+            </div>
+            <div class="col-12">
+              <label for="cMessage" class="form-label-custom">Message</label>
+              <textarea class="form-control-custom" id="cMessage" name="message" rows="5" required></textarea>
+              <div class="invalid-feedback-custom">Please enter a message.</div>
+            </div>
+            <div class="col-12 d-flex flex-wrap align-items-center gap-3 mt-2">
+              <button type="submit" class="btn-neon btn-neon-purple">
+                <span>Send Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+              <span class="form-status" id="formStatus" role="status" aria-live="polite"></span>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row gy-4 align-items-center">
+      <div class="col-lg-5">
+        <div class="footer-logo">IAN <span>THORNG DY</span></div>
+        <p class="footer-tagline">IT Student / Computer Teacher Applicant</p>
+        <p class="footer-motto">Learn Today &bull; Teach Tomorrow &bull; Make a Difference</p>
+      </div>
+      <div class="col-lg-4">
+        <ul class="footer-contact-list">
+          <li><i class="fa-solid fa-envelope"></i> thorngdy632@gmail.com</li>
+          <li><i class="fa-solid fa-phone"></i> +885 067 267 968</li>
+          <li><i class="fa-solid fa-location-dot"></i> Serei Saophoan City, Banteay Meanchey, Cambodia</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 text-lg-end">
+        <button class="back-to-top" id="backToTop" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <p class="footer-copy">&copy; 2026 Ian Thorng Dy. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
