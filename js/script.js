@@ -17,6 +17,11 @@
 
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  // Initialize EmailJS
+  if (window.emailjs) {
+    emailjs.init("MmD1yASRrNg3MsdlE");
+  }
+
   document.addEventListener("DOMContentLoaded", () => {
     initNav();
     initScrollProgress();
@@ -235,19 +240,20 @@
       }
 
       status.style.color = "var(--neon-cyan)";
-      status.textContent = "Thank you! Your message has been prepared.";
-      form.reset();
+      status.textContent = "Sending...";
 
-      // Optional mailto fallback for convenience
-      const name = encodeURIComponent(form.name.value);
-      const subject = encodeURIComponent(form.subject.value);
-      const body = encodeURIComponent(
-        `From: ${form.name.value} (${form.email.value})\n\n${form.message.value}`
-      );
-      const mailtoLink = document.createElement("a");
-      mailtoLink.href = `mailto:${portfolioData.email}?subject=${subject}&body=${body}`;
-      // Not auto-clicked to avoid unexpected mail client popups; stored for reference only.
-      form.dataset.mailto = mailtoLink.href;
+      // Send email via EmailJS
+      emailjs.sendForm("service_nhivipf", "template_qqn2hv5", form)
+        .then(() => {
+          status.textContent = "Message sent successfully!";
+          status.style.color = "var(--neon-cyan)";
+          form.reset();
+        })
+        .catch((error) => {
+          status.textContent = "Failed to send. Please try again.";
+          status.style.color = "var(--neon-pink)";
+          console.error("EmailJS error:", error);
+        });
     });
   }
 
